@@ -11,7 +11,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   List<Map<String, dynamic>> items = [
     {"id": 1, "name": "ishan", "phoneNo": 9925100624},
-    {"id": 2, "name": "hunal", "phoneNo": 9925100624},
+    {"id": 2, "name": "kunal", "phoneNo": 9925100624},
     {"id": 3, "name": "harshil", "phoneNo": 9925100624},
     {"id": 4, "name": "krishna", "phoneNo": 9925100624},
     {"id": 5, "name": "sneh", "phoneNo": 9925100624},
