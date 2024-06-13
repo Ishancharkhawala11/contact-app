@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:practise/Widgets/ShowDialog.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -44,8 +45,8 @@ class _HomeState extends State<Home> {
         decoration: const BoxDecoration(
           color: Colors.white,
         ),
-        height: MediaQuery.of(context).size.height / 1.2,
-        margin: EdgeInsets.only(top: 20),
+        height: MediaQuery.of(context).size.height / 1.1,
+        // margin: EdgeInsets.only(top: 20),
         child: ListView.builder(
           itemCount: items.length,
           itemBuilder: (context, index) {
@@ -102,7 +103,9 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
-
+         showDialog(context: context, builder: (BuildContext context){
+           return ShowDialog();
+         });
         },
         child: Icon(Icons.add),
       ),
